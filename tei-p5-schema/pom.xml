@@ -23,7 +23,7 @@
     <name>PDFExtract: TEI XML-schema for Java</name>
     <groupId>org.elacin</groupId>
     <artifactId>tei-p5-schema</artifactId>
-    <version>1.0</version>
+    <version>0.1-SNAPSHOT</version>
 
     <build>
         <plugins>
