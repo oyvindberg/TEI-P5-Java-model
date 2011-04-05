@@ -22,14 +22,15 @@
               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
 
     <jxb:bindings schemaLocation="../xsd/tei_all.xsd" node="/xs:schema">
+
         <jxb:schemaBindings>
-            <jxb:package name="org.elacin.teischema"/>
+            <jxb:package name="org.tei_c"/>
         </jxb:schemaBindings>
 
         <jxb:bindings node="//xs:complexContent/xs:extension/xs:attribute[@name = 'space']">
             <jxb:property name="distinct_space"/>
-
         </jxb:bindings>
+
 
         <jxb:bindings node="/xs:schema/xs:element/xs:complexType/xs:attribute[@name = 'lang']">
             <jxb:property name="code_lang"/>
