@@ -69,16 +69,20 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
 
     <scm>
-        <connection>scm:git:git://github.com/elacin/TEI-P5-Java-model</connection>
-        <developerConnection>scm:git:git://github.com/elacin/TEI-P5-Java-model</developerConnection>
-        <url>http://github.com/elacin/TEI-P5-Java-model/blob/master/</url>
+        <connection>scm:git:git://github.com/elacin/TEI-P5-Java-model/tei-p5-schema/</connection>
+        <developerConnection>scm:git:git://github.com/elacin/TEI-P5-Java-model/tei-p5-schema/</developerConnection>
+        <url>http://github.com/elacin/TEI-P5-Java-model/blob/master/tei-p5-schema/</url>
 
     </scm>
-
 
     <repositories>
         <repository>
@@ -87,5 +91,6 @@
             <url>http://download.java.net/maven/2</url>
         </repository>
     </repositories>
+
 
 </project>
