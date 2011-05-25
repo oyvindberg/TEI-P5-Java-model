@@ -79,7 +79,6 @@
         <connection>scm:git:git://github.com/elacin/TEI-P5-Java-model</connection>
         <developerConnection>scm:git:ssh://git@github.com/elacin/TEI-P5-Java-model</developerConnection>
         <url>http://github.com/elacin/TEI-P5-Java-model/blob/master</url>
-
     </scm>
 
     <repositories>
