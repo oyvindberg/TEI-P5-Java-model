@@ -21,7 +21,7 @@
               xsi:schemaLocation="http://java.sun.com/xml/ns/jaxb http://java.sun.com/xml/ns/jaxb/bindingschema_2_0.xsd"
               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
 
-    <jxb:bindings schemaLocation="../xsd/tei_minimal.xsd" node="/xs:schema">
+    <jxb:bindings schemaLocation="../xsd/tei_all.xsd" node="/xs:schema">
 
         <jxb:schemaBindings>
             <jxb:package name="org.tei_c"/>
@@ -32,43 +32,43 @@
         </jxb:bindings>
 
 
-        <!--<jxb:bindings node="/xs:schema/xs:element/xs:complexType/xs:attribute[@name = 'lang']">-->
-            <!--<jxb:property name="code_lang"/>-->
-        <!--</jxb:bindings>-->
+        <jxb:bindings node="/xs:schema/xs:element/xs:complexType/xs:attribute[@name = 'lang']">
+            <jxb:property name="code_lang"/>
+        </jxb:bindings>
 
-        <!--<jxb:bindings-->
-                <!--node="/xs:schema/xs:element[@name = 'link']/xs:complexType/xs:attribute[@name = 'targets']">-->
-            <!--<jxb:property name="link_targets"/>-->
-        <!--</jxb:bindings>-->
+        <jxb:bindings
+                node="/xs:schema/xs:element[@name = 'link']/xs:complexType/xs:attribute[@name = 'targets']">
+            <jxb:property name="link_targets"/>
+        </jxb:bindings>
 
-        <!--<jxb:bindings-->
-                <!--node="/xs:schema/xs:element[@name = 'join']/xs:complexType/xs:attribute[@name = 'targets']">-->
-            <!--<jxb:property name="join_targets"/>-->
-        <!--</jxb:bindings>-->
+        <jxb:bindings
+                node="/xs:schema/xs:element[@name = 'join']/xs:complexType/xs:attribute[@name = 'targets']">
+            <jxb:property name="join_targets"/>
+        </jxb:bindings>
 
-        <!--<jxb:bindings-->
-                <!--node="/xs:schema/xs:element[@name = 'alt']/xs:complexType/xs:attribute[@name = 'targets']">-->
-            <!--<jxb:property name="alt_targets"/>-->
-        <!--</jxb:bindings>-->
+        <jxb:bindings
+                node="/xs:schema/xs:element[@name = 'alt']/xs:complexType/xs:attribute[@name = 'targets']">
+            <jxb:property name="alt_targets"/>
+        </jxb:bindings>
 
         <jxb:bindings node="/xs:schema/xs:attributeGroup/xs:attribute[@name = 'rendition']">
             <jxb:property name="rendering"/>
         </jxb:bindings>
 
-        <!--<jxb:bindings-->
-                <!--node="/xs:schema/xs:element[@name = 'schemaSpec']/xs:complexType/xs:attribute[@name = 'ns']">-->
-            <!--<jxb:property name="schema_ns"/>-->
-        <!--</jxb:bindings>-->
+        <jxb:bindings
+                node="/xs:schema/xs:element[@name = 'schemaSpec']/xs:complexType/xs:attribute[@name = 'ns']">
+            <jxb:property name="schema_ns"/>
+        </jxb:bindings>
 
-        <!--<jxb:bindings-->
-                <!--node="/xs:schema/xs:element[@name = 'elementSpec']/xs:complexType/xs:attribute[@name = 'ns']">-->
-            <!--<jxb:property name="element_ns"/>-->
-        <!--</jxb:bindings>-->
+        <jxb:bindings
+                node="/xs:schema/xs:element[@name = 'elementSpec']/xs:complexType/xs:attribute[@name = 'ns']">
+            <jxb:property name="element_ns"/>
+        </jxb:bindings>
 
-        <!--<jxb:bindings-->
-                <!--node="/xs:schema/xs:element[@name = 'attDef']/xs:complexType/xs:attribute[@name = 'ns']">-->
-            <!--<jxb:property name="attribute_ns"/>-->
-        <!--</jxb:bindings>-->
+        <jxb:bindings
+                node="/xs:schema/xs:element[@name = 'attDef']/xs:complexType/xs:attribute[@name = 'ns']">
+            <jxb:property name="attribute_ns"/>
+        </jxb:bindings>
 
     </jxb:bindings>
 
